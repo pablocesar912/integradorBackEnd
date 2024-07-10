@@ -66,3 +66,9 @@ CREATE TABLE pedidos (
     FOREIGN KEY (cliente_id) REFERENCES Clientes(id),
     FOREIGN KEY (libro_id) REFERENCES Libros(id)
 );
+
+
+### Cargar registros a la base de datos
+
+Libros:
+
