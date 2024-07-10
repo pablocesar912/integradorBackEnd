@@ -1,5 +1,5 @@
-const express = require ("express")
-const cors = require ("cors")
+const express = require("express")
+const cors = require("cors")
 const libroRouter = require("./routes/libroRouter.js")
 const app = express()
 const port = 3030
@@ -9,15 +9,13 @@ const db = require("./data/db.js")
 app.use(cors())
 app.use(express.json())
 
-
 app.get ("/",(req,res)=>{
 res.send("Estás en el home: Servidor creado con express, para la entrega del proyecto final")
 })
 
-app.use("/libros", libroRouter)
+app.use("/libros", libroRouter) //Modularizado
 
 // Conexión a la base de datos
-
 const conexionDB = async ()=>{
     try {
         await db.authenticate()

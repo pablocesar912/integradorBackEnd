@@ -10,7 +10,7 @@
 
 <6> Se debe poder realizar borrado físico de los datos. (DELETE) (listo)
 
-<7> El trabajo práctico deberá subirse a un servidor online y compartirse mediante un repositorio de Git. (Mandatorio)
+<7> El trabajo práctico deberá subirse a un servidor online y compartirse mediante un repositorio de Git. (Mandatorio) (listo)
 
 <8> La página deberá subirse a un servidor on-line para poder ser navegada por el Docente. (Mandatorio)
 

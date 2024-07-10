@@ -1,7 +1,7 @@
 const { DELETE } = require("sequelize/lib/query-types")
-const librosModel = require ("../models/librosModel.js")
+const librosModel = require("../models/librosModel.js")
 
-/* FUNCION PARA TRAER TODOS LOS POSTEOS = READ - GET */
+/* TRAER TODOS LOS LIBROS (READ) -> GET */
 const traerLibros = async (req,res)=> {
     try {
     const libros =  await librosModel.findAll()
@@ -11,8 +11,7 @@ const traerLibros = async (req,res)=> {
     }
     }
 
-    
-/* FUNCION PARA TRAER UN POSTEO = READ - GET */
+/* FUNCION PARA TRAER UN LIBRO (READ) -> GET */
 const traerUnLibro = async (req,res)=>{
     try {
         const libro = await librosModel.findByPk(req.params.id)
@@ -23,7 +22,7 @@ const traerUnLibro = async (req,res)=>{
     }    
 
 
-/* FUNCION QUE CREA UN REGISTRO  = CREATE - POST */
+/* FUNCION QUE CREA UN LIBRO (CREATE) -> POST */
 const crearLibro = async (req,res)=>{
     try {
         await librosModel.create(req.body)
@@ -34,7 +33,7 @@ const crearLibro = async (req,res)=>{
 }
 
 
-/* FUNCION QUE ACTUALIZA UN REGISTRO - UPDATE - PUT */
+/* FUNCION QUE ACTUALIZA UN LIBRO (UPDATE) -> PUT */
 const actualizarLibro = async(req,res)=>{
     try {
         await librosModel.update(req.body,{
@@ -47,7 +46,7 @@ const actualizarLibro = async(req,res)=>{
 }
 
 
-/* FUNCION PARA BORRAR UN REGISTRO - DELETE - DELETE */
+/* FUNCION PARA BORRAR UN LIBRO (DELETE) -> DELETE */
 const borrarLibro = async (req,res)=>{
     try {
         await librosModel.destroy( { where:{id:req.params.id}})
@@ -57,7 +56,7 @@ const borrarLibro = async (req,res)=>{
     }
 }
 
-module.exports = {traerLibros, traerUnLibro, crearLibro, actualizarLibro, borrarLibro}
+module.exports = {traerLibros,traerUnLibro,crearLibro,actualizarLibro,borrarLibro}
 
 
 
