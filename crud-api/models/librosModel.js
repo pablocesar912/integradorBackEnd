@@ -8,7 +8,7 @@ const {DataTypes} = require("sequelize")
 const librosModel = db.define ("libros",{
     titulo:{type:DataTypes.STRING},
     isbn:{type:DataTypes.STRING},
-    fecha_publicacion:{type:DataTypes.DATE},
+    anio_publicacion:{type:DataTypes.INTEGER},
     genero:{type:DataTypes.STRING},
     disponible:{type:DataTypes.BOOLEAN}
 })

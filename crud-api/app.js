@@ -10,7 +10,7 @@ app.use(cors())
 app.use(express.json())
 
 app.get ("/",(req,res)=>{
-res.send("Estás en el home: Servidor creado con express, para la entrega del proyecto final")
+res.send("Estás en el home: Servidor creado con express, para la entrega del proyecto final integrador.")
 })
 
 app.use("/libros", libroRouter) //Modularizado

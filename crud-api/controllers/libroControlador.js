@@ -57,10 +57,3 @@ const borrarLibro = async (req,res)=>{
 }
 
 module.exports = {traerLibros,traerUnLibro,crearLibro,actualizarLibro,borrarLibro}
-
-
-
-
-/*
-
-*/
