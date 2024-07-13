@@ -16,4 +16,4 @@
 
 <9> Se valorará la aplicación de un token o método de autenticación.
 
-<10> El backend debe estar integrado con un frontend.
+<10> El backend debe estar integrado con un frontend. (listo)
