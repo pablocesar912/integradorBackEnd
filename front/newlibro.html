@@ -9,10 +9,11 @@
     <header>
         <h1> - BIBLIOTECA 24255 -</h1>
     </header>
+    
     <hr>
     <body>
         <h3>Alta de Libros</h3>
-        <form action="" class="formulario">
+        <form id="crear-libro" class="formulario">
             <div>
                 <label for="titulo">Título:</label>
                 <input type="text" name="titulo" id="titulo">
@@ -21,24 +22,24 @@
                 <label for="autor">Autor:</label>
                     <select id="autor" name="autor">
                     <option value="">Selecciona...</option>
-                    <option value="gabriel_garcia_marquez">Gabriel García Márquez</option>
-                    <option value="george_orwell">George Orwell</option>
-                    <option value="jane_austen">Jane Austen</option>
-                    <option value="antoine_de_saint_exupery">Antoine de Saint-Exupéry</option>
-                    <option value="jk_rowling">J.K. Rowling</option>
-                    <option value="miguel_de_cervantes">Miguel de Cervantes</option>
-                    <option value="harper_lee">Harper Lee</option>
-                    <option value="jrr_tolkien">J.R.R. Tolkien</option>
-                    <option value="carlos_luis_zafon">Carlos Luis Zafón</option>
+                    <option value="1">Gabriel García Márquez</option>
+                    <option value="2">George Orwell</option>
+                    <option value="3">Jane Austen</option>
+                    <option value="4">Antoine de Saint-Exupéry</option>
+                    <option value="5">J.K. Rowling</option>
+                    <option value="6">Miguel de Cervantes</option>
+                    <option value="7">Harper Lee</option>
+                    <option value="8">J.R.R. Tolkien</option>
+                    <option value="9">Carlos Luis Zafón</option>
                     </select>
             </div>
             <div>
-                <label for="titulo">Editorial:</label>
+                <label for="editorial">Editorial:</label>
                 <select id="editorial" name="editorial">
                     <option value="">Selecciona...</option>
-                    <option value="editorial_sudamericana">Editorial Sudamericana</option>
-                    <option value="penguin_books">Penguin Books</option>
-                    <option value="ediciones_sm">Ediciones SM</option>
+                    <option value="1">Editorial Sudamericana</option>
+                    <option value="2">Penguin Books</option>
+                    <option value="3">Ediciones SM</option>
                   </select>
             </div>
             <div>
@@ -46,8 +47,8 @@
                 <input type="text" name="isbn" id="isbn">
             </div>
             <div>
-                <label for="anio">Año de publicación:</label>
-                <input type="number" name="anio" id="anio">
+                <label for="anio-publicacion">Año de publicación:</label>
+                <input type="number" name="anio-publicacion" id="anio-publicacion">
             </div>
             <div>
                 <label for="genero">Género:</label>
@@ -63,14 +64,20 @@
                 <input type="radio" id="disponible" name="disponible" value="false">
             </div>
             <div>
-                <button type="submit">Dar de alta</button>
+                <button type="submit"> -Crear Libro- </button>
             </div>
         </form>
     </body>
+    
     <hr>
     <footer>
         &copy; Grupo 11 - Todos los derechos reservados.-
     </footer>
+
+    <!--   cargar el CDN de Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- cargar el script principal -->
+    <script src="./js/newlibro.js"></script>
 
 </body>
 </html>
