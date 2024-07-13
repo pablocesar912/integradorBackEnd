@@ -106,9 +106,12 @@ VALUES
     ('Laura', 'Sánchez', 'Gran Vía 456, Barcelona', '+34 93 333 2222', 'laura.sanchez@example.com', NOW(), NOW());
 
 
+-- Ana García pide 2 unidades de "Cien años de soledad"
+-- Juan Martínez pide 1 unidad de "Harry Potter y la piedra filosofal"
+-- María López pide 3 unidades de "Matar a un ruiseñor"
+
 INSERT INTO pedidos (fecha_pedido, cliente_id, libro_id, cantidad, createdAt, updatedAt)
 VALUES
-    ('2024-07-10', 1, 1, 2, NOW(), NOW()),  -- Ana García pide 2 unidades de "Cien años de soledad"
-    ('2024-07-09', 2, 5, 1, NOW(), NOW()),  -- Juan Martínez pide 1 unidad de "Harry Potter y la piedra filosofal"
-    ('2024-07-08', 3, 7, 3, NOW(), NOW());  -- María López pide 3 unidades de "Matar a un ruiseñor"
-  
+    ('2024-07-10', 1, 1, 2, NOW(), NOW()),
+    ('2024-07-09', 2, 5, 1, NOW(), NOW()),
+    ('2024-07-08', 3, 7, 3, NOW(), NOW()); 

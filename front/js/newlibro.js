@@ -17,12 +17,12 @@ async function crearLibro(nuevoLibro) {
     // Obtener los datos del formulario
     const nuevoLibro = {
       titulo: document.querySelector('#titulo').value,
-      autor: parseInt(document.querySelector("#autor").value, 10),
-      editorial: parseInt(document.querySelector("#editorial").value, 10),
+      autor_id: parseInt(document.querySelector("#autor").value, 10),
+      editorial_id: parseInt(document.querySelector("#editorial").value, 10),
       isbn: document.querySelector('#isbn').value,
-      anioPublicacion: parseInt(document.querySelector('#anio-publicacion').value, 10),
+      anio_publicacion: parseInt(document.querySelector('#anio_publicacion').value, 10),
       genero: document.querySelector('#genero').value,
-      disponibilidad: document.querySelector('#disponibilidad').checked,
+      disponible: document.querySelector('#disponible').checked,
     };
 
     // Crear el nuevo libro

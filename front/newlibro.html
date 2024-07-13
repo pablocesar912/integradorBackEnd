@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Biblioteca24255</title>
 </head>
+
 <body>
     <header>
-        <h1> - BIBLIOTECA 24255 -</h1>
+        <h1>- BIBLIOTECA 24255 -</h1>
     </header>
-    
+
     <hr>
-    <body>
-        <h3>Alta de Libros</h3>
+    <main>
+        <h2>Agregar Libro al Catálogo</h2>
         <form id="crear-libro" class="formulario">
             <div>
                 <label for="titulo">Título:</label>
-                <input type="text" name="titulo" id="titulo">
-            </div>
+                <input type="text" name="titulo" id="titulo" />
+            </div> <br>
             <div>
                 <label for="autor">Autor:</label>
-                    <select id="autor" name="autor">
+                <select id="autor" name="autor">
                     <option value="">Selecciona...</option>
                     <option value="1">Gabriel García Márquez</option>
                     <option value="2">George Orwell</option>
@@ -31,8 +33,8 @@
                     <option value="7">Harper Lee</option>
                     <option value="8">J.R.R. Tolkien</option>
                     <option value="9">Carlos Luis Zafón</option>
-                    </select>
-            </div>
+                </select>
+            </div><br>
             <div>
                 <label for="editorial">Editorial:</label>
                 <select id="editorial" name="editorial">
@@ -40,44 +42,40 @@
                     <option value="1">Editorial Sudamericana</option>
                     <option value="2">Penguin Books</option>
                     <option value="3">Ediciones SM</option>
-                  </select>
-            </div>
+                </select>
+            </div><br>
             <div>
                 <label for="isbn">ISBN:</label>
-                <input type="text" name="isbn" id="isbn">
-            </div>
+                <input type="text" name="isbn" id="isbn" />
+            </div><br>
             <div>
-                <label for="anio-publicacion">Año de publicación:</label>
-                <input type="number" name="anio-publicacion" id="anio-publicacion">
-            </div>
+                <label for="anio_publicacion">Año de publicación:</label>
+                <input type="number" name="anio_publicacion" id="anio_publicacion" />
+            </div><br>
             <div>
                 <label for="genero">Género:</label>
-                <input type="text" name="genero" id="genero">
-            </div>
+                <input type="text" name="genero" id="genero" />
+            </div><br>
             <div>
                 <label for="disponibilidad">Disponibilidad:</label>
-                
                 <label for="disponible"> Sí </label>
-                <input type="radio" id="disponible" name="disponible" value="true">
-
+                <input type="radio" id="disponible" name="disponible" value="true" />
                 <label for="disponible"> No </label>
-                <input type="radio" id="disponible" name="disponible" value="false">
-            </div>
+                <input type="radio" id="disponible" name="disponible" value="false" />
+            </div><br>
             <div>
-                <button type="submit"> -Crear Libro- </button>
-            </div>
+                <button type="submit">Agregar Libro</button>
+            </div><br>
         </form>
-    </body>
-    
+    </main>
+
     <hr>
-    <footer>
-        &copy; Grupo 11 - Todos los derechos reservados.-
-    </footer>
+    <footer>&copy; Grupo 11 - Todos los derechos reservados.</footer>
 
     <!--   cargar el CDN de Axios -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- cargar el script principal -->
     <script src="./js/newlibro.js"></script>
-
 </body>
+
 </html>
